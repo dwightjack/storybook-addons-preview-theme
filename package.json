@@ -1,0 +1,37 @@
+{
+  "name": "storybook-addons-preview-theme",
+  "version": "1.0.0",
+  "author": "Marco Solazzi",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.m.js",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "build": "node ./scripts/build",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@storybook/addons": "^5.0.0",
+    "@storybook/components": "^5.0.0",
+    "@storybook/core-events": "5.0.0",
+    "@storybook/theming": "5.0.0",
+    "react": "^16.8.4"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.8",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "del": "^4.0.0",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.16.4",
+    "rollup": "^1.6.0",
+    "typescript": "^3.3.3333"
+  }
+}

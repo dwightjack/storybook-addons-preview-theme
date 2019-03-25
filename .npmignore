@@ -1,0 +1,5 @@
+*.log
+.editorconfig
+.eslintignore
+.eslintrc.js
+.rts2_cache*
