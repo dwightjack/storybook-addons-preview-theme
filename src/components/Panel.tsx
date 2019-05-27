@@ -42,7 +42,7 @@ export function Panel({
 
   const themes = getThemes(data.parameters || {});
 
-  if (themes.length === 0) {
+  if (!Array.isArray(themes) || themes.length === 0) {
     return (
       <Placeholder>Theme swatches not available for this story</Placeholder>
     );

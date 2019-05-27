@@ -8,6 +8,8 @@ export interface SelectProps {
   value?: string;
 }
 
+const defaultOption = { name: 'empty', className: 'none', label: 'select...' };
+
 export function Select({
   onChange,
   options,
@@ -21,10 +23,7 @@ export function Select({
       label="Preview Theme"
       size="flex"
     >
-      {[
-        { name: 'empty', className: 'none', label: 'select...' },
-        ...options,
-      ].map(({ name, label, className }) => (
+      {[defaultOption, ...options].map(({ name, label, className }) => (
         <option value={className} key={name}>
           {label}
         </option>

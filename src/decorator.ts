@@ -17,12 +17,13 @@ export const withTheme = makeDecorator({
     let themeClass: string;
 
     channel.on('preview-theme:change', (selected) => {
-      if (selected !== 'none') {
-        document.body.classList.add(selected);
-      } else if (selected === 'none' && themeClass) {
+      if (themeClass) {
         document.body.classList.remove(themeClass);
       }
-      themeClass = selected;
+      if (selected !== 'none') {
+        document.body.classList.add(selected);
+      }
+      themeClass = selected === 'none' ? null : selected;
     });
 
     return getStory(context);
