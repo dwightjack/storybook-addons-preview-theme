@@ -8,11 +8,15 @@ export interface SelectProps {
   value?: string;
 }
 
-const defaultOption = { name: 'empty', className: 'none', label: 'select...' };
+const defaultOption = {
+  name: 'empty',
+  className: 'none',
+  label: 'select...',
+};
 
 export function Select({
   onChange,
-  options,
+  options = [],
   value = '',
 }): React.FunctionComponentElement<SelectProps> {
   return (

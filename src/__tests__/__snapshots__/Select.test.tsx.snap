@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select/> matches minimal snapshot 1`] = `
+<select
+  label="Preview Theme"
+  name="preview-theme"
+>
+  <option
+    value="none"
+  >
+    select...
+  </option>
+</select>
+`;
+
+exports[`<Select/> matches snapshot 1`] = `
+<select
+  label="Preview Theme"
+  name="preview-theme"
+>
+  <option
+    value="none"
+  >
+    select...
+  </option>
+  <option
+    value="-dark"
+  >
+    Dark
+  </option>
+</select>
+`;

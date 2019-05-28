@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Panel /> change event handler 1`] = `
+<div
+  class="css-13bbivi"
+>
+  <form>
+    <div>
+      <select
+        options="[object Object]"
+      />
+    </div>
+  </form>
+</div>
+`;
+
+exports[`<Panel /> default snapshot 1`] = `
+<div
+  class="css-13bbivi"
+>
+  <form>
+    <div>
+      <select
+        label="Preview Theme"
+        name="preview-theme"
+      >
+        <option
+          value="none"
+        >
+          select...
+        </option>
+        <option />
+      </select>
+    </div>
+  </form>
+</div>
+`;

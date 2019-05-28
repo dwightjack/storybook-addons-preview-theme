@@ -1,12 +1,16 @@
 import { Theme, ThemeProp, ThemeConfig } from './types';
 
-export const isEmpty = (arr: any[]): boolean =>
-  !(Array.isArray(arr) && arr.length > 0);
+export function isEmpty(arr: any[]): boolean {
+  if (!Array.isArray(arr)) {
+    return true;
+  }
+  return arr.length <= 0;
+}
 
 export const getThemes = ({
   globalThemes = [],
   themes,
-}: ThemeConfig): Theme[] => {
+}: ThemeConfig): Theme[] | null => {
   if (isEmpty(globalThemes) || !themes) {
     return null;
   }
