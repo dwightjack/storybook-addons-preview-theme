@@ -8,6 +8,11 @@
   "engines": {
     "node": ">=8.9.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwightjack/storybook-addons-preview-theme.git"
+  },
+  "bugs": "https://github.com/dwightjack/storybook-addons-preview-theme/issues",
   "scripts": {
     "build": "node ./scripts/build",
     "lint": "eslint src/**/*.ts && tsc --noEmit -p .",
