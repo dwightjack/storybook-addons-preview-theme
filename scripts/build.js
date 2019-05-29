@@ -1,7 +1,6 @@
 const { resolve } = require('path');
 const bundle = require('microbundle');
 const del = require('del');
-
 (async function() {
   const cwd = resolve(__dirname, '..');
 

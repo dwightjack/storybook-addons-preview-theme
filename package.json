@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "node ./scripts/build",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts && tsc --noEmit -p .",
+    "prepublishOnly": "yarn lint && yarn build"
   },
   "dependencies": {
     "@storybook/addons": "^5.0.11",
