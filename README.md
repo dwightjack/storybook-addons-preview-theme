@@ -135,5 +135,5 @@ storiesOf('Button', module)
 
 1.  Fork it or clone the repo
 1.  Install dependencies `yarn install`
-1.  Ensure everything is fine by running `yarn build`
+1.  Ensure everything is fine by running `yarn release`
 1.  Push it or submit a pull request :D

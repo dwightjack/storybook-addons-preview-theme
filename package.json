@@ -16,7 +16,9 @@
   "scripts": {
     "build": "node ./scripts/build",
     "lint": "eslint src/**/*.ts && tsc --noEmit -p .",
-    "prepublishOnly": "yarn lint && yarn build"
+    "test": "jest",
+    "release": "yarn lint && yarn test && yarn build",
+    "prepublishOnly": "yarn release"
   },
   "dependencies": {
     "@storybook/addons": "^5.0.11",
